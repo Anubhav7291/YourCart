@@ -13,7 +13,15 @@ import '../style/queries.css';
 
 const App=()=> {
     return (
+<<<<<<< HEAD
         <div>      
+||||||| 6a7693e
+        <div>
+                <GoogleAuth/>      
+=======
+        <div>
+                     
+>>>>>>> 8ca02c0bae69c60b2118352a740fe6d84ac06d1c
             <BrowserRouter>
             <Header/>
             
