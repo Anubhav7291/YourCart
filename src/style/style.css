@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.eachProduct{
+    padding: 20px;
+    border: 4px solid whitesmoke;
+    height: 350px;
+    text-align: center;
+}
+.col-md-3{
+    height: 400px;;
+}
+h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+/* Header */
+.navbar-brand{
+    font-family:'Franklin Gothic Medium';
+    font-size: 30px;
+    
+}
+.navbar{
+    border: 4px solid whitesmoke;
+    margin-top: 8px;
+}
+.cart{
+    float: right;
+    margin-top: 10px;
+    margin-right:30px;
+}
+.formImage:hover{
+    transform: scale(1.04);
+
+}
+/* Details */
+.DetailImage{
+    height: 500px;
+    width: 400px;
+    margin-left: 30px;
+    
+}
+.details{
+    float: right;
+    margin-right: 160px;
+    border: 2px solid whitesmoke;
+    width: 50%;
+    height: auto;
+    padding:20px;
+}
+.detail-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cart-btn {
+    margin-top: 8px;
+   color:green;
+}
+.price{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+.description{
+    text-align: center;
+    font-family: serif;
+    font-size: 20px;
+}
+/* Cart */
+.cart-container{
+    text-align: center;
+    width: 30%;
+}
+.cartImage{
+    height: 170px;
+    width: 120px;
+}
+
+.cart-price{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+}
+.cart-title{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Payment */
+.checkout h5{
+    display: inline-block;
+}
+.payment-border{
+    border:2px solid black;
+    margin-left: 60px;
+    width: 25%;
+    padding: 4px;
+}
+.payment-cart{
+    margin-left:60px;
+}
