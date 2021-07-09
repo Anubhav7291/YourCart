@@ -26,22 +26,22 @@ const DeliveryForm=(props)=> {
             <form onSubmit={e=>{handler(e)}}>
                 <div className="form-group">
                     <label>Name</label>
-                    <input className="form-control" value={nameValue} onChange={e=>setNameValue(e.target.value)} placeholder="FullName" type="text"></input>
+                    <input className="form-control" required value={nameValue} onChange={e=>setNameValue(e.target.value)} placeholder="FullName" type="text"></input>
                 </div>
 
                 <div className="form-group">
                     <label>Mobile Number</label>
-                    <input className="form-control" value={mobValue} onChange={e=>setMobValue(e.target.value)} placeholder="Mobile Number" type="text"></input>
+                    <input className="form-control" required value={mobValue} onChange={e=>setMobValue(e.target.value)} placeholder="Mobile Number" type="text"></input>
                 </div>
 
                 <div className="form-group">
                     <label>PinCode</label>
-                    <input className="form-control"value={pinValue} onChange={e=>setPinValue(e.target.value)} placeholder="Pincode" type="text"></input>
+                    <input className="form-control" required value={pinValue} onChange={e=>setPinValue(e.target.value)} placeholder="Pincode" type="text"></input>
                 </div>
 
                 <div className="form-group">
                     <label>Address</label>
-                    <textarea className="form-control" value={addressValue} onChange={e=>setAddressValue(e.target.value)} placeholder="Flat Number/Colony" type="text"></textarea>
+                    <textarea className="form-control" required value={addressValue} onChange={e=>setAddressValue(e.target.value)} placeholder="Flat Number/Colony" type="text"></textarea>
                 </div>
 
                 <div className="form-group">

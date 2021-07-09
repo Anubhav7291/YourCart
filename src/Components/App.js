@@ -13,13 +13,9 @@ import '../style/queries.css';
 
 const App=()=> {
     return (
-   
-
         <div>
-       
             <BrowserRouter>
             <Header/>
-            
             <Route path="/cart" exact component={Cart}></Route>
             <Route path="/" exact component={Form}></Route>
             <Route path="/details/:id" exact component={Detail}></Route>
