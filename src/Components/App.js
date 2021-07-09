@@ -9,12 +9,11 @@ import Payment from './Payment';
 import BuyNowForm from './BuyNowForm';
 import BuyNowPayment from './BuyNowPayment';
 import SignInPage from './SignInPage';
-import GoogleAuth from './GoogleAuth';
+import '../style/queries.css';
 
 const App=()=> {
     return (
-        <div>
-                <GoogleAuth/>      
+        <div>      
             <BrowserRouter>
             <Header/>
             

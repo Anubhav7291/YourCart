@@ -23,9 +23,9 @@ const Cart=(props)=> {
     }
         return  props.cartdetail.length===0?
         
-        <div className="container-sm">
-            <h2 className="text-center">Your Cart is Empty</h2>
-        <Link to='/'><button style={{marginLeft:"615px"}}className="btn-danger btn-lg">Shop Now</button></Link>
+        <div className="container-sm text-center">
+            <h2 >Your Cart is Empty</h2>
+        <Link to='/'><button className="btn-danger btn-lg">Shop Now</button></Link>
         </div>
         :
         
@@ -50,7 +50,7 @@ const Cart=(props)=> {
                     {index===Number(id)?<h3>{`Total price $${Number(cart.price)*Number(value)}`}</h3>:
                    <h3>{`Total price $${Number(cart.price)}`}</h3>}
                     
-                    <button className="btn-danger btn-lg">Check Out</button>&nbsp;&nbsp;
+                   <Link to='/payment'><button className="btn-danger btn-lg">Check Out</button></Link> &nbsp;&nbsp;
                     <button onClick={()=>remove(index)} className="btn-success btn-lg">Remove</button>
                 </div>
             </div> 

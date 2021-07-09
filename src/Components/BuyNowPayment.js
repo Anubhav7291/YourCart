@@ -10,6 +10,7 @@ const BuyNowPayment=(props)=> {
         setrender(render+1)
     }
     else{
+        console.log(props.IsSignedIn)
        alert('Please Sign In first')
         
     }
@@ -18,8 +19,8 @@ const BuyNowPayment=(props)=> {
     
     return (
         props.BuyNowDetails.length===0?
-        <div><h2 className="text-center">Order Placed! Thank you for shopping with us</h2>
-       <Link to="/" ><button className="btn-warning btn-lg"style={{marginLeft:"600px"}}>Shop More</button></Link>
+        <div className="text-center"><h2 >Order Placed! Thank you for shopping with us</h2>
+       <Link to="/" ><button className="btn-warning btn-lg">Shop More</button></Link>
         </div>
         
         :

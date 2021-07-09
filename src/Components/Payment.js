@@ -22,8 +22,8 @@ const Payment=(props)=> {
     }
     return (
         props.cartDetails.length ===0 ?
-        <div><h2 className="text-center">Order Placed! Thank you for shopping with us</h2>
-       <Link to="/" ><button className="btn-warning btn-lg"style={{marginLeft:"600px"}}>Shop More</button></Link>
+        <div className="order" className="text-center"><h2 >Order Placed! Thank you for shopping with us</h2>
+       <Link to="/" ><button className="order-btn btn-warning btn-lg">Shop More</button></Link>
         </div>
         
         :

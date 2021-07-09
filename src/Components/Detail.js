@@ -36,20 +36,20 @@ class Detail extends Component {
             return <div>Loading</div>
         }
             return (
-            <div>
+            <div className="detail-container">
                 <img className="DetailImage" src={this.props.details.image}/>
                 <div className="details">
                    
                     <h3 className="detail-title">{this.props.details.title}</h3>
                     <h2 className="price">${this.props.details.price}</h2>
                      <h2 className="description">{this.props.details.description}</h2>
-                    <button onClick={()=>{this.cart();this.cartC()}} className="btn-success btn-lg">Add To Cart</button>&nbsp;&nbsp;
-                   <Link to="/buynowform"> <button onClick={()=>this.buyNow()} className="btn-primary btn-lg">Buy Now</button></Link>
+                    <button onClick={()=>{this.cart();this.cartC()}} className="btn-success btn-sm">Add To Cart</button>&nbsp;&nbsp;
+                   <Link to="/buynowform"> <button onClick={()=>this.buyNow()} className="btn-primary btn-sm">Buy Now</button></Link>
                     <div className="cart-btn"></div>
                     {this.state.s?
                     <div style={{marginTop:"10px"}}>
-                    <Link to="/cart"><button className="bg-warning btn-lg">Cart</button></Link>&nbsp;&nbsp;
-                    <Link to="/address"><button className="bg-info btn-lg">Proceed to Buy ({this.props.count} items)</button></Link>
+                    <Link to="/cart"><button className="bg-warning btn-sm">Cart</button></Link>&nbsp;&nbsp;
+                    <Link to="/address"><button className="bg-info btn-sm">Proceed to Buy ({this.props.count} items)</button></Link>
                     </div>
                 :null}</div>
             </div>

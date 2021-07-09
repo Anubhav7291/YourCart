@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {showAllProducts} from '../actions';
 import '../style/style.css';
+
 import { showDetail } from '../actions';
 import {Link} from 'react-router-dom';
 
