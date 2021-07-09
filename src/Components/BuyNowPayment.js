@@ -10,7 +10,7 @@ const BuyNowPayment=(props)=> {
         setrender(render+1)
     }
     else{
-        console.log(props.IsSignedIn)
+     
        alert('Please Sign In first')
         
     }
