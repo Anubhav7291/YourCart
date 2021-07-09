@@ -14,7 +14,7 @@ import GoogleAuth from './GoogleAuth';
 const App=()=> {
     return (
         <div>
-                <GoogleAuth/>      
+                     
             <BrowserRouter>
             <Header/>
             
