@@ -21,7 +21,7 @@ const BuyNowForm=(props)=> {
     return (
         <div>
             <div className="container-fluid text-center" style={{width:"50%"}}>
-                <h1>Delivery Details</h1>
+                <h1 className="delivery">Delivery Details</h1>
             <form onSubmit={e=>{handler(e)}}>
                 <div className="form-group">
                     <label>Name</label>

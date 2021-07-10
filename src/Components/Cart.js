@@ -50,7 +50,7 @@ const Cart=(props)=> {
                     {index===Number(id)?<h3>{`Total price $${Number(cart.price)*Number(value)}`}</h3>:
                    <h3>{`Total price $${Number(cart.price)}`}</h3>}
                     
-                   <Link to='/payment'><button className="btn-danger btn-lg">Check Out</button></Link> &nbsp;&nbsp;
+                   <Link to='/address'><button className="btn-danger btn-lg">Check Out</button></Link> &nbsp;&nbsp;
                     <button onClick={()=>remove(index)} className="btn-success btn-lg">Remove</button>
                 </div>
             </div> 

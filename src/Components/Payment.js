@@ -36,7 +36,7 @@ const Payment=(props)=> {
            <p>{props.state},</p>
            <p>{props.pin}</p>
            </div>
-           <div className="container-sm">
+           <div className="container-sm" >
                {props.cartDetails.map((detail,index)=>{
                    {arr.push(detail.price)}
                    return ( 

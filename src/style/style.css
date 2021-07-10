@@ -36,7 +36,9 @@ h4{
 }
 .formImage:hover{
     transform: scale(1.04);
-
+}
+#toggle{
+    display:none;
 }
 /* Details */
 .DetailImage{
