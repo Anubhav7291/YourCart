@@ -27,7 +27,7 @@ const Payment=(props)=> {
         </div>
         
         :
-        <div>
+        <div className="instruction">
             <h2 style={{marginLeft:"40px"}}>Product will be delivered to below Address</h2>
             <h5 style={{marginLeft:"40px"}}>{`Our Delivery Agent will Contact you on ${props.mob}`}</h5>
             <div className="payment-border">

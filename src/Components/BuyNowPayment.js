@@ -24,7 +24,7 @@ const BuyNowPayment=(props)=> {
         </div>
         
         :
-        <div>
+        <div className='instruction'>
             <h2 style={{marginLeft:"40px"}}>Product will be delivered to below Address</h2>
             <h5 style={{marginLeft:"40px"}}>{`Our Delivery Agent will Contact you on ${props.mob}`}</h5>
             <div className="payment-border">
@@ -44,7 +44,7 @@ const BuyNowPayment=(props)=> {
                           <h1 className="label label-success">${detail.price}</h1>
                     
                           </div>
-                          <button onClick={e=>handler(e)} style={{marginLeft:"200px"}} className="btn-danger btn-lg">Pay ${detail.price}</button>
+                          <button onClick={e=>handler(e)} style={{marginLeft:"200px"}} className="btn-danger btn-sm">Pay ${detail.price}</button>
 
                        </div>
                        

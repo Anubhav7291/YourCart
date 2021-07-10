@@ -28,5 +28,8 @@
         .order{
             text-align: center;
         }
+        .instruction h2{
+            font-size:medium
+        }
       
     }
