@@ -10,6 +10,7 @@ class Detail extends Component {
 
     }    
     componentDidMount() { 
+        
         this.props.showDetail(this.props.match.params.id);
         
     }

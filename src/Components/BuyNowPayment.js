@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux'
 
 const BuyNowPayment=(props)=> {
+    console.log(props);
     const [render,setrender]=useState(0)
     const handler=(e)=>{
         if(props.IsSignedIn){
@@ -20,7 +21,7 @@ const BuyNowPayment=(props)=> {
     return (
         props.BuyNowDetails.length===0?
         <div className="text-center"><h2 >Order Placed! Thank you for shopping with us</h2>
-       <Link to="/" ><button className="btn-warning btn-lg">Shop More</button></Link>
+       <Link to="/" ><button  className="btn-warning btn-lg">Shop More</button></Link>
         </div>
         
         :

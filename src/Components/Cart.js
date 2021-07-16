@@ -30,15 +30,17 @@ const Cart=(props)=> {
         :
         
         <div>
-        <div className="container-fluid">
-     <div className="row">
+        <div className="container-fluid text-center">
+        <Link to='/address'><button className="btn-danger btn-lg">Check Out</button></Link> &nbsp;&nbsp;
+     <div className="row" style={{padding:"15px"}} ><br/>
          
          {
          props.cartdetail.map((cart,index)=>{
             return(
                 
             <div key={cart.id}>
-           <div className="col-md-6">
+                
+           <div className="col-md-6 text-center" style={{border:"4px solid whitesmoke",padding:"8px"}}><br/>
                 <img className="cartImage" src={cart.image}/>
                 <div className="cart-main">
                 <h2 className="cart-price">${cart.price}</h2>
@@ -50,18 +52,21 @@ const Cart=(props)=> {
                     {index===Number(id)?<h3>{`Total price $${Number(cart.price)*Number(value)}`}</h3>:
                    <h3>{`Total price $${Number(cart.price)}`}</h3>}
                     
-                   <Link to='/address'><button className="btn-danger btn-lg">Check Out</button></Link> &nbsp;&nbsp;
+                  
                     <button onClick={()=>remove(index)} className="btn-success btn-lg">Remove</button>
                 </div>
             </div> 
-        
     
         </div>
     )})};
-    </div></div></div>
+    </div>
+    
+   
+        
+    </div></div>
         }
 const mapStateToprops=(state)=>{
-    console.log(state)
+
     return {cartdetail:state.addToCart,
         showProductDetail:state.showProductDetail,
     cartCount:state.cartCount
