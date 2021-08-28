@@ -38,8 +38,7 @@ class GoogleAuth extends React.Component{
                 <i className="google icon"/> 
                 SignOut
             </button>
-            <img style={{height:"40px" ,float:"right",borderRadius:"50%",marginRight:"8px"}} src={this.auth.currentUser.ee.dt.CJ}/>
-            <h4 style={{float:"right" ,marginRight:"8px"}}>{`Hi ${this.auth.currentUser.ee.dt.uU}`}</h4>
+    
             </div>
            
         }else{
